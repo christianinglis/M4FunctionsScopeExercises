@@ -74,7 +74,7 @@
           ACTUAL = sameName;
         };
         fn();
-        expect(ACTUAL === 'inner').to.be.true;
+        expect(ACTUAL === 'sameName').to.be.true;
       });
 
       it('if an inner and an outer variable share the same name, and the name is referenced in the outer scope, the outer value binding will be used', function () {
@@ -84,7 +84,7 @@
         };
         fn();
         ACTUAL = sameName;
-        expect(ACTUAL === 'inner').to.be.true;
+        expect(ACTUAL === 'sameName').to.be.true;
       });
 
       it('a new variable scope is created for every call to a function, as exemplified with a counter', function () {
