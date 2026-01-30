@@ -44,7 +44,7 @@
         expect(function () {
           ACTUAL = localToFirstFn;
         }).to.throw();
-        expect(ACTUAL === 'localToFirstFn').to.be.true;
+        expect(ACTUAL === 'inner').to.be.true;
       });
 
       it('a function\'s local scope variables are not available anywhere outside that function, regardless of the context it\'s called in', function () {
